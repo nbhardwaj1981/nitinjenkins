@@ -1,7 +1,7 @@
 resource "aws_instance" "jenkins" {
     ami = var.ami
     instance_type = "t2.micro"
-    key_name = "terraform"
+    key_name = "nitinJenkins"
     iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
     vpc_security_group_ids = [aws_security_group.allow_login.id]
     tags =  {

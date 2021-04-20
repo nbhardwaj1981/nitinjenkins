@@ -7,7 +7,7 @@ variable region {
 }
 
 variable project {
-    default = "jenkins-gopal"
+    default = "Nitin-jenkins"
 }
 variable mysourcesg {
     default = "0.0.0.0/0"
