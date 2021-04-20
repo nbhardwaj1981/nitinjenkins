@@ -1,5 +1,5 @@
 resource "aws_iam_role" "ec2_role" {
-  name = "jenkins-ec2_role"
+  name = "jenkins-ec2_role-gopal"
 
   assume_role_policy = <<EOF
 {
@@ -25,6 +25,6 @@ EOF
 
 
 resource "aws_iam_instance_profile" "ec2_profile" {
-  name = "ec2_profile"
+  name = "ec2_profile-gopal"
   role = "${aws_iam_role.ec2_role.name}"
 }

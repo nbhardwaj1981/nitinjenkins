@@ -7,7 +7,7 @@ variable region {
 }
 
 variable project {
-    default = "jenkins"
+    default = "jenkins-gopal"
 }
 variable mysourcesg {
     default = "0.0.0.0/0"
